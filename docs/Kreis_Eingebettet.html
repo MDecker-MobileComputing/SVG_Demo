@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Eingebettete SVG-Grafik mit Kreis</title>
+
+  <meta charset="utf-8">
+
+  <style>
+    <!--
+
+        body { font-family: sans-serif; } /* ALLE Schriften ohne Serifen. */
+
+        a, q, abbr { font-style: italic; } /* Hyperlinks und Abkürzungen in kursiver Schrift. */
+
+        li { margin-bottom: 10px; } /* Mehr Abstand zwischen den Punkten von Aufzählungs-Listen. */
+
+        section { margin-bottom: 35px; }
+
+        svg { border: 1px solid grey; } /* Rahmen (alle vier Seiten) um eingebettete Vektor-Grafik. */
+
+    -->
+  </style>
+</head>
+<body>
+
+  <h1>Eingebettete SVG-Grafik mit Kreis</h1>
+
+  <section>
+
+    <h2>Einleitung</h2>
+
+    <p>Die Abkürzung <cite>SVG</cite> steht für <cite>"Scalable Vector Graphics"</cite>.
+      Auf <cite>Mozilla Developer Network (MDN)</cite> findet sich die folgende Definition:
+      <q>[E]ine XML-Auszeichnungssprache zur
+      Beschreibung zweidimensionaler <b>Vektorgrafiken</b>.</q>
+      <a href="https://developer.mozilla.org/de/docs/SVG_In_HTML_Introduction" target="_blank">(Quelle)</a>
+    <p>
+
+    <p>Die aktuellen Browser (Firefox, Chrome, IE, Opera und Vivaldi) können SVG-Grafiken <em>ohne</em>
+        die Installation von Plugins/AddOns darstellen.
+        Im Gegensatz zu Bitmap-Grafiken (Raster-Grafiken) wie z.B. PNG-, GIF- oder JPEG-Dateien
+        werden Vektor-Grafiken nicht über ein Punkte-Raste definiert, sondern über geometrische
+        Grundformen wie Kreise oder Linien.
+        Dadurch verschlechtert sich die Grafik-Qualität bei Vektor-Grafiken auch dann nicht,
+        wenn diese Vergrößert werden.
+        Bei Vergrößerungen von Bitmap-Grafiken hingegen kommt es zu einer Verschlechterung
+        der Darstellung, die Grafik wird <i>"pixelig"</i>, d.h. es kommt zum <i>"Treppenstufen-Effekt"</i>.
+    <p>
+
+    <p>Vektor-Grafiken haben auch Nachteile:
+        Der Aufwand bei der Darstellung (<i>"Rendering"</i>) kann höher sein, und für
+        fotorealistische Darstellungen sind meist Bitmap-Dateien besser geeignet.
+    </p>
+
+  </section>
+
+
+  <section>
+
+    <h2>Eingebettete SVG-Grafik</h2>
+
+    <p>Hier sollte ein gelber Kreis mit schwarzer Randlinie angezeigt werden:</p>
+
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+        <title>Dieser Titel wird angezeigt, wenn man die Maus über die Vektor-Grafik hält.</title>
+
+        <!-- Kreis mit Mittelpunkt an Koordiante (cx,cy)=(150,150) und Radius r=140. -->
+        <circle cx="150"  cy="150"  r="140"  stroke="black"  stroke-width="4"  fill="yellow" />
+
+    </svg>
+
+    <p>Der SVG-Code ist eingebettet, ist also direkt im Quelltext der vorliegenden HTML-Seite
+        in einem <code>SVG</code>-Tag definiert.
+        Die schwarze Linie als Rahmen ist mit CSS im <code>HEAD</code>-Bereich dieser HTML-Seite
+        definiert.
+    </p>
+
+        <p>Vergrößern Sie in Ihrem Browser die Anzeige dieser HTML-Seite mit der Zoom-Funktion
+        (Tastenkombination <code>STRG + NummernBlockPlus</code> für Firefox, Chrome, Opera und IE).
+        Dabei verschlechtert sich die Darstellungs-Qualität der Kreislinie nicht.
+    </p>
+
+  </section>
+
+
+  <section>
+
+    <h2>Links für weitere Informationen zu SVG:</h2>
+
+    <ul>
+      <li><a href="https://developer.mozilla.org/de/docs/Web/SVG/Element" target="_blank">Liste der SVG-Elemente</a>
+          auf <cite>developer.mozilla.org</cite></li>
+
+      <li>W3C-Empfehlung <a href="http://www.w3.org/TR/SVG11/" target="_blank">Scalable Vector Graphics (SVG) 1.1</a>.
+
+      <li>SVG-Format für
+          <a href="https://developer.android.com/training/material/drawables.html#VectorDrawables" target="_blank">Android Vector Drawables</a>
+          (ab Android 5.0, API-Level 21, <cite>Lollipop</cite>).</li>
+
+      <li><a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank">Tutorial</a>
+          zum SVG-Format auf <cite>w3schools.com</cite>.</li>
+
+      <li><a href="https://de.wikipedia.org/wiki/Vektorgrafik" target="_blank">Artikel</a>
+          auf der deutsch-sprachigen <cite>Wikipedia</cite> zum Thema <i>"Vektor-Grafiken</i>
+          (mit Abgrenzung zu Bitmap-/Rastergrafiken).</li>
+
+      <li><a href="http://www1.plurib.us/1shot/2008/eleven_below/eleven_below_single.svg" target="_blank">Beispiel einer SVG-Grafik</a>
+          aus der <a href="http://www1.plurib.us/svg_gallery/" target="_blank">"SVG Art Gallery"</a> von Brian Lukis.</li>
+    </ul>
+
+  </section>
+
+</body>
+
