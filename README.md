@@ -11,7 +11,7 @@ Demo page for using **Vector Graphics** in SVG format (Scalable Vector Graphics)
 <br>
 
 These pages are hosted on [GitHub Pages](https://help.github.com/articles/what-is-github-pages/). 
-The web content can be found in the `docs` folder of this repository.
+The web content can be found in the [docs](docs/) folder of this repository.
 
 ----
 # License
