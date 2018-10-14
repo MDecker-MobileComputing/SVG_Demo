@@ -8,6 +8,8 @@ Demo page for using **Vector Graphics** in SVG format (Scalable Vector Graphics)
 * [SVG in HTML code](https://mdecker-mobilecomputing.github.io/SVG_Demo/Kreis_Eingebettet.html)
 * [SVG as external file](https://mdecker-mobilecomputing.github.io/SVG_Demo/Kreis_ExterneDatei.html)
 
+The external SVG file can also be accessed alone: [Kreis.svg](https://mdecker-mobilecomputing.github.io/SVG_Demo/Kreis.svg)
+
 <br>
 
 These pages are hosted on [GitHub Pages](https://help.github.com/articles/what-is-github-pages/). 
