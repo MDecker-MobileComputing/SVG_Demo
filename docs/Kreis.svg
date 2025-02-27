@@ -3,11 +3,11 @@
   
   <title>Dieser Titel wird angezeigt, wenn man die Maus über die Vektor-Grafik hält.</title>
   
-  <!-- Kreis mit Mittelpunkt an Koordiante (cx,cy)=(150,150) und Radius r=140. -->
+  <!-- Kreis mit Mittelpunkt an Koordinate (cx,cy)=(150,150) und Radius r=140. -->
   <circle cx="150"  cy="150"  r="140"  stroke="black"  stroke-width="2"  fill="yellow" />
   
   
-  <!-- Rote Linie von Linksloben nach rechts unten -->
+  <!-- Rote Linie von links oben nach rechts unten -->
   <line x1="0"  y1="0"  x2="300"  y2="300"  stroke-width="2"  stroke="red" />
   
   <!-- Blaue Linie von links unten nach rechts oben -->
